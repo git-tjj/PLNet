@@ -6,6 +6,7 @@
 **DtracePLN** is available on [Github](https://github.com/git-tjj/DtracePLN).
 
 ### R Package installation
+- Before installing **DtracePLN** package, please install **cescwang85-EQUAL-da9cbbb.tar.gz** on [Github](https://github.com/git-tjj/DtracePLN).
 - For the development version, use the github install
 ```{r package github, eval = FALSE}
 remotes::install_github("https://github.com/git-tjj/DtracePLN")
