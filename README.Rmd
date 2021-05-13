@@ -26,9 +26,14 @@ The package comes with a single-cell RNA sequence data about Interferon β-Stimu
 ### DtracePLN
 ```{r load DtracePLN, eval = FALSE}
 library(DtracePLN)
+## simulation data for testing
+data("obs_mat")
+DtracePLN_res_sim<-DtracePLN::DtracePLN(obs_mat = DtracePLN::obs_mat,
+Sd_est = "GMPR",lambda_vec = NULL , n_lambda = 50 , lambda_valuemax0 = 10)
 
+## real data analysis
 data("realdatamatrix")
-DtracePLN_res<-DtracePLN::DtracePLN(obs_mat = DtracePLN::realdatamatrix,
+DtracePLN_res_real<-DtracePLN::DtracePLN(obs_mat = DtracePLN::realdatamatrix,
 Sd_est = "GMPR",lambda_vec = NULL , n_lambda = 50 , lambda_valuemax0 = 10)
 ```
 
